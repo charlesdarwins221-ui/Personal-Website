@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owoeye Glory — Front-End Web Developer</title>
+<meta name="description" content="Owoeye Glory Oluwaferanmi — Front-End Web Developer building fast, responsive, user-friendly websites with HTML, CSS and JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <a href="index.html" class="brand"><span class="bracket">&lt;</span>OG<span class="bracket">/&gt;</span><span class="cursor">_</span></a>
+    <div class="tabs">
+      <a href="index.html" class="tab active"><span class="dot"></span>home.html</a>
+      <a href="about.html" class="tab"><span class="dot"></span>about.js</a>
+      <a href="services.html" class="tab"><span class="dot"></span>services.css</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow"><span class="kw">const</span> <span class="fn">role</span> = <span class="str">"Front-End Web Developer"</span></p>
+        <h1>I turn designs into <span class="gradient-text">interfaces that work.</span></h1>
+        <p class="hero-lede">Hi, I'm Owoeye Glory Oluwaferanmi — a front-end developer in Nigeria with almost 3 years of experience building responsive, user-friendly websites with HTML, CSS and JavaScript.</p>
+        <div class="btn-row">
+          <a href="services.html" class="btn btn-primary">View services →</a>
+          <a href="about.html#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
+        <div class="facts-strip">
+          <span class="fact"><span class="slash">//</span> <strong>3+</strong> client sites shipped</span>
+          <span class="fact"><span class="slash">//</span> based in <strong>Nigeria</strong></span>
+          <span class="fact"><span class="slash">//</span> <strong>available</strong> for freelance</span>
+        </div>
+      </div>
+
+      <div class="editor-window reveal">
+        <div class="editor-titlebar">
+          <div class="traffic-lights"><span></span><span></span><span></span></div>
+          <span class="editor-filename">developer.js</span>
+        </div>
+        <div class="editor-body">
+<span class="ln">1</span><span class="code-kw">const</span> <span class="code-prop">developer</span> = {<br>
+<span class="ln">2</span>&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-str">"Owoeye Glory Oluwaferanmi"</span>,<br>
+<span class="ln">3</span>&nbsp;&nbsp;<span class="code-prop">role</span>: <span class="code-str">"Front-End Web Developer"</span>,<br>
+<span class="ln">4</span>&nbsp;&nbsp;<span class="code-prop">experience</span>: <span class="code-str">"~3 years"</span>,<br>
+<span class="ln">5</span>&nbsp;&nbsp;<span class="code-prop">stack</span>: [<span class="code-str">"HTML"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"Git"</span>],<br>
+<span class="ln">6</span>&nbsp;&nbsp;<span class="code-prop">location</span>: <span class="code-str">"Nigeria"</span>,<br>
+<span class="ln">7</span>&nbsp;&nbsp;<span class="code-prop">status</span>: <span class="code-fn">getAvailability</span>()<br>
+<span class="ln">8</span>};<br>
+<span class="ln">9</span><span class="code-com">// <span id="typed-line" data-text="console.log(developer.status); → 'open to freelance work'"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="kw">import</span> { skills } <span class="kw">from</span> <span class="str">'./toolkit'</span></p>
+        <h2>Tools I build with</h2>
+        <p>The core stack behind every project I ship — clean, dependable, and enough to take a design from concept to a live URL.</p>
+      </div>
+      <div class="chip-grid reveal">
+        <span class="chip"><span class="chip-dot" style="background:var(--orange)"></span>HTML5</span>
+        <span class="chip"><span class="chip-dot" style="background:var(--blue)"></span>CSS3 — Flexbox &amp; Grid</span>
+        <span class="chip"><span class="chip-dot" style="background:var(--purple)"></span>Responsive / Mobile-first Design</span>
+        <span class="chip"><span class="chip-dot" style="background:#F7DF1E"></span>JavaScript (DOM &amp; Interactivity)</span>
+        <span class="chip"><span class="chip-dot" style="background:var(--green)"></span>Git &amp; GitHub</span>
+        <span class="chip"><span class="chip-dot" style="background:var(--pink)"></span>Cross-browser Compatibility</span>
+        <span class="chip"><span class="chip-dot" style="background:var(--text-secondary)"></span>Vercel Deployment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="fn">renderProject</span>(<span class="str">"featured"</span>)</p>
+        <h2>Featured work</h2>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="browser-mock">
+          <div class="browser-bar">
+            <div class="traffic-lights"><span></span><span></span><span></span></div>
+            <div class="browser-url">glow-nest-five.vercel.app</div>
+          </div>
+          <div class="browser-screen" style="padding:0;">
+            <img src="glownest-screenshot.png" alt="GlowNest Salon landing page screenshot" style="width:100%; display:block; border-radius:0 0 var(--radius) var(--radius);">
+          </div>
+        </div>
+
+        <div>
+          <h3>GlowNest Salon — Beauty Studio Landing Page</h3>
+          <p style="margin-top:10px;">A fully responsive salon landing page with a hero section, services &amp; pricing, gallery, team profiles, and a multi-field appointment booking form — built solo from concept to deployment.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+          </div>
+          <a href="https://glow-nest-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Visit live site ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <p class="eyebrow"><span class="kw">function</span> <span class="fn">startProject</span>()</p>
+        <h2>Have a site that needs building?</h2>
+        <p>I'm currently available for freelance front-end work — landing pages, booking systems, and interactive layouts.</p>
+        <div class="btn-row">
+          <a href="about.html#contact" class="btn btn-primary">Start a conversation →</a>
+          <a href="services.html" class="btn btn-ghost">See what I offer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-brand">© <span id="year"></span> Owoeye Glory Oluwaferanmi</span>
+    <div class="footer-links">
+      <a href="https://github.com/charlesdarwins221-ui" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:owoeyeglory68@gmail.com">Email</a>
+      <a href="tel:+2347042966409">Phone</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
